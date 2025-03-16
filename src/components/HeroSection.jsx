@@ -28,16 +28,16 @@ export const HeroSection = () => {
   const prevSlide = () => {
     // setFading(true)
 
-    setTimeout(() => {
+    // setTimeout(() => {
       setCurrSlideIndex((curr) => curr == 0 ? slides.length - 1 : curr - 1)
-    }, 250)
+    // }, 250)
   }
   const nextSlide = () => {
     // setFading(true)
 
-    setTimeout(() => {
+    // setTimeout(() => {
       setCurrSlideIndex((curr) => curr == slides.length - 1 ? 0 : curr + 1)
-    }, 250)
+    // }, 250)
   }
 
   // const handleImageLoad = () => {
@@ -105,9 +105,10 @@ export const HeroSection = () => {
 
           {slides.map((slide, index) => (
             <div className="imageSection">
+              <div className="singleSection">
               <h2>{slide.text}</h2>
-              <img src={slide.imageUrl} alt=""
-              />
+              <img src={slide.imageUrl} alt=""/>
+              </div>
             </div>
           ))}
         </div>
