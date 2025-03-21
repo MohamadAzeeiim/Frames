@@ -1,0 +1,10 @@
+.cardSection{
+    width: 100%;
+    background: bisque;
+    padding:5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
